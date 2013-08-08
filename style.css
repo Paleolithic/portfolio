@@ -22,14 +22,17 @@ body {
 		width:25%;
 		height:100%;
 		float:left;
+
 	}
 	
 	
 	.content {
 		width:100%;
 		height:100%;
+		top: 10%;
 		margin:0 auto;
 		position:relative;
+
 	}
 	
 
@@ -47,6 +50,14 @@ body {
 	background-image: url('images/dirty_old_shirt.png'); 
 	width: 110%;
 }
+
+#item1{
+	border-width:0px 3000px 0px 0px;
+	-moz-border-image:url("images/zigzag.png") 100 repeat stretch;
+	-webkit-border-image:url("images/zigzag.png") 75 stretch;
+	border-right-image:url("images/zigzag.png") 20 repeat stretch;
+}
+
 
 /* Clearfix */
 .circles:after { visibility: hidden; display: block; content: ""; clear: both; height: 0; }
@@ -143,6 +154,8 @@ body {
 
 
 
+
+
 /* Example Two */
 #example-two {
 	margin-left: auto;
@@ -203,6 +216,11 @@ body {
 	width: 120px;
 	margin-left: auto;
 	margin-right: auto;
+	visibility: hidden;
+}
+
+#example-two li:hover p{
+	visibility: visible;
 }
 
 #example-two #magic-line-two { 
