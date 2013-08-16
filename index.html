@@ -12,9 +12,14 @@
 <script type="text/javascript" src="js/jquery.color-RGBa-patch.js"></script>
 <script type="text/javascript" src="js/magic-line.js"></script>
 <script type="text/javascript" src="js/progressbar.js"></script>
+<script>
+	$(document).ready(function(){
+	  $(".about_me").click(setTimeout(function(){
+	    progressBar(75, $('#progressBar'), "College: ");
+	  }, 2500));
+	});
 
-
-
+</script>
 </head>
 <body>
 
@@ -24,7 +29,7 @@
 
 		<ul class="circles" id="example-one">
 	    	<li class="current_page_item"><a rel="#fe4902" href="#item1" class="panel"><p>Home</p></a></li>
-	    	<li><a rel="#C6AA01" href="#item2" class="panel" onclick="progressBar(75, $('#progressBar'), "College: ");"><p>About me</p></a></li>
+	    	<li><a rel="#C6AA01" href="#item2" class="panel" id="about_me"><p>About me</p></a></li>
 	    	<li><a rel="#A41322" href="#item3" class="panel"><p>Portfolio</p></a></li>
 	    	<li><a rel="#7E7499" href="#item4" class="panel"><p>Contact</p></a></li>
 		</ul>
