@@ -7,12 +7,29 @@ body {
 	word-spacing: -2px;
 }
 
+h1{
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
 #nav-wrap{
 	position: fixed;
 	height: 46px;
 	z-index: 1000;
 	background-image: url('images/dirty_old_shirt.png'); 
 	width: 100%;
+
+}
+
+#nav-wrap h1{
+	position: absolute;
+	top: 50%;
+	margin-top: -8px;
+	margin-left: 30px;
+	float: left;
+	font-size: 16pt;
+	line-height: .8;
 }
 
 .header{
@@ -27,9 +44,6 @@ body {
 
 .header h1{
 	position: absolute;
-	font-weight: normal;
-	padding: 0;
-	margin: 0;
 	border-bottom-style:solid; 
 	border-bottom-width:2px;
 	line-height: .95;
