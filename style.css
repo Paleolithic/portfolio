@@ -54,7 +54,6 @@ h1{
 
 
 .text{
-
 	position: relative;
 	height: 400px;
 	width: 650px;
@@ -64,7 +63,6 @@ h1{
 
 	.text .paragraph{
 		position: relative;
-		font-size: 14pt;
 		width: 60%; 
 		line-height:1.2; 
 		word-spacing: 2px; 
@@ -96,41 +94,12 @@ h1{
 	font-size: 80px;
 	line-height: .8;
 	top: 120px;
+	background-image: none;
+	border: none;
+	
 }
 
 
-#wrapper {
-	width:100%;
-	height:100%;
-	position:absolute;
-	top:0;left:0;
-	overflow:hidden;
-}
-
-	#mask {
-		width:400%;
-		height:100%;
-	}
-
-	.item {
-		width:25%;
-		height:100%;
-		float:left;
-
-	}
-	
-	.content {
-		width:60%;
-		height:100%;
-		top: 10%;
-		margin:0 auto;
-		position:relative;
-
-	}
-	
-	.clear {
-		clear:both;
-	}
 
 
 
@@ -142,143 +111,4 @@ h1{
 }
 */
 
-/* Clearfix */
-.circles:after { visibility: hidden; display: block; content: ""; clear: both; height: 0; }
-*:first-child+html .circles { zoom: 1; } /* IE7 */
-
-/* Example One */
-#example-one {
-	margin: 0 auto;
-	list-style: none; 
-	position: relative; 
-	text-align: right;
-	float:right;
-	margin-right: 30px;
-	height: 46px;
-	top: -4px;
-
-}
-#example-one li { 
-	display: inline-block;
-
-
-}
-#example-one a { 
-	color: #bbb; 
-	font-size: 16px; 
-	float: right;
-	padding: 0px 10px 4px 10px;
-	text-decoration: none;
-	text-transform: uppercase;
-	height: 46px;
-}
-
-#example-one a:hover, .current_page_item a { 
-	color: white !important; 
-}
-
-
-#magic-line { 
-	position: absolute;
- 	bottom: 6px;
-	width: 100px; 
-	height: 2px; 
-	background: #fe4902;
-}
-
-
-
-.ie6 #example-one li, .ie7 #example-one li { 
-	display: inline; 
-}
-.ie6 #magic-line {
-	bottom: 22px;
-}
-
-/* Example Two */
-#example-two {
-	margin-left: auto;
-	margin-right:auto;
-	left: 20px;
-	right: 0;
-	width: 740px;
-	list-style: none; 
-	position: relative;
-	
-}
-#example-two li { 
-	display: inline-block;
-	width: 150px;
-	height: 150px;
-	border-radius: 100%; 
-	margin-right: 20px;
-
-
-}
-#example-two li a { 
-	position: relative; 
-	z-index: 200; 
-	color: #bbb; 
-	font-size: 20px; 
-	display: block; 
-	float: left; 
-	padding: 6px 0 4px 0px;
-	text-decoration: none;
-	text-transform: uppercase; 
-	text-align: center;
-	margin-top: 38px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 150px;
-
-	
-
-}
-
-#example-two li a:hover { 
-	color: white; 
-}
-
-#example-two li img{
-	position: absolute;
-	margin-top: -45px;
-	margin-left: -1px;
-	width: 154px;
-	height: 154px;
-	left: 0px;
-}
-
-
-#example-two li p{
-	background: rgba(0, 0, 0, 0.7);
-	width: 120px;
-	margin-left: auto;
-	margin-right: auto;
-	visibility: hidden;
-}
-
-#example-two li:hover p{
-	visibility: visible;
-}
-
-#example-two #magic-line-two { 
-	position: absolute; 
-	top: -1px; 
-	left: 0; 
-	width: 100px; 
-	background: #900; 
-	z-index: 100; 
-	-moz-border-radius: 100%; 
-	-webkit-border-radius: 100%; 
-	border-radius: 100%; 
-}
-
-
-.current_page_item_two a { 
-	color: white !important; 
-}
-
-.ie6 #example-two li, .ie7 #example-two li {
-	display: inline;
-}
 
