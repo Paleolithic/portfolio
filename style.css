@@ -71,6 +71,7 @@ h1{
 		display: inline-block; 
 		vertical-align: top; 
 		float: right;
+		text-align: justify;
 	}
 
 	.text h2{
@@ -119,7 +120,7 @@ h1{
 	}
 	
 	.content {
-		width:100%;
+		width:60%;
 		height:100%;
 		top: 10%;
 		margin:0 auto;
