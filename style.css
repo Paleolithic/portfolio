@@ -13,6 +13,23 @@ h1{
 	padding: 0;
 }
 
+h2{
+	width: 650px;
+	position: relative; 
+	font-size: 28pt; 
+	margin: 0;
+	padding: 0;
+	left: 75px;
+	font-weight: normal;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h3{
+	margin:0;
+	padding:0;
+}
+
 #nav-wrap{
 	position: fixed;
 	height: 46px;
@@ -32,28 +49,7 @@ h1{
 	line-height: .8;
 }
 
-.header{
-	margin: 0;
-	padding: 0;
-	height: 40px;
-	margin-left: auto;
-	margin-right: auto;
-	background-image: url('images/dirty_old_shirt.png'); 
-	width: 100%;
-} 
-
-.header h1{
-	position: absolute;
-	border-bottom-style:solid; 
-	border-bottom-width:2px;
-	line-height: .95;
-	border-bottom-color: #C6AA01;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
-
-.text{
+.info{
 	position: relative;
 	height: 400px;
 	width: 650px;
@@ -61,7 +57,7 @@ h1{
 	margin-right: auto;
 }
 
-	.text .paragraph{
+	.info .right_content{
 		position: relative;
 		width: 60%; 
 		line-height:1.2; 
@@ -72,23 +68,39 @@ h1{
 		text-align: justify;
 	}
 
-	.text h2{
-		position: relative; 
-		font-size: 28pt; 
-		margin: 0;
-		padding: 0;
-		left: 75px;
-		font-weight: normal;
+	.info .right_content #left_right_content{
+		float:left;
+		width: 20%;
+
 	}
 
-	.text img{
+	.info .right_content #progressBars {
+		margin:0;
+		padding:0;
+		width: 78%;
+		float: right;
+		margin-right: 4px;
+	}
+
+	.info p{
+		width: 35%;
+		display: inline-block;
+		vertical-align: top;
+		text-align: justify;
+		line-height:1.2; 
+		word-spacing: 2px; 
+	}
+	.info img{
 		position: relative; 
 		display: inline-block; 
 		vertical-align: top; 
 		float:left;
 	}
 
-
+	.info #twitter{
+		background-color: #7E7499;
+		padding: 0 10px 0 10px;
+	}
 #home{
 	position: relative;
 	font-size: 80px;
@@ -98,6 +110,8 @@ h1{
 	border: none;
 	
 }
+
+
 
 
 

@@ -13,11 +13,16 @@
 <script type="text/javascript" src="js/magic-line.js"></script>
 <script type="text/javascript" src="js/progressbar.js"></script>
 <script>
-	$(document).ready(function(){
-	  $(".about_me").click(setTimeout(function(){
-	    progressBar(75, $('#progressBar'), "College: ");
-	  }, 2500));
-	});
+	
+
+	
+
+	/*$(document).ready(function(){
+  		$("button").click(function(){
+    		setTimeout(function(){progressBar(50, $('#college'), '50%');},1500);
+  		});
+	});*/
+
 
 </script>
 </head>
@@ -26,18 +31,17 @@
 <div id="wrapper">
 <div id="mask">
 	<div id="nav-wrap">
-
 		<ul class="circles" id="example-one">
-	    	<li class="current_page_item"><a rel="#fe4902" href="#item1" class="panel"><p>Home</p></a></li>
+	    	<li class="current_page_item"><a rel="#fe4902" href="#item1" class="panel unload" id="ho"><p>Home</p></a></li>
 	    	<li><a rel="#C6AA01" href="#item2" class="panel" id="about_me"><p>About me</p></a></li>
-	    	<li><a rel="#A41322" href="#item3" class="panel"><p>Portfolio</p></a></li>
-	    	<li><a rel="#7E7499" href="#item4" class="panel"><p>Contact</p></a></li>
+	    	<li><a rel="#A41322" href="#item3" class="panel unload" id="portfolio"><p>Portfolio</p></a></li>
+	    	<li><a rel="#7E7499" href="#item4" class="panel unload" id="contact"><p>Contact</p></a></li>
 		</ul>
 	</div>
 	<div id="item1" style="background-color: #02735E;" class="item">
 		<div class="content" >
 
-			<div class="text"  id="home">
+			<div class="info"  id="home">
 				<span style="margin-bottom: 6px; font-size: 28pt;">Hello, my name is TJ.</span>
 				<span style="font-size: 150px;">Welcome</span><br>
 				&nbsp&nbsp&nbsp&nbsp&nbsp&nbspto my portfolio
@@ -52,18 +56,30 @@
 	</div>
 	
 	<div id="item2" style="background-color: #8C1616;" class="item">
-		<div class="content">
-			<!--<div class="header">
-				<h1>ABOUT ME</h1>
-
-			</div> -->
-			<div class="text" >
-
+		<div class="content">			
+			<div class="info" >
 				<h2>I study Information Technology</h2>
-				<div class="paragraph"> at the Rochester Institute of Technology, with a double minor in Game Development and Sociology. I am the Vice President of my fraternity, Kappa Delta Rho, residing over a group of 45 RIT students. I currently work at RIT Tech Crew, where I help run the audio and lighting for events around campus. I also work as a notetaker for my classes, taking notes for those deaf or hard of hearing. Furthermore, I work at Research Computing, where I do research into sending and recieving high quality video streams over networks.<hr>
-					<div id="progressBar"><div></div></div></div> 
+				<img src="images/me.jpg" width="218px" height="327px">	
+				<div class="right_content"> at the Rochester Institute of Technology, with a double minor in Game Development and Sociology. I am the Vice President of my fraternity, Kappa Delta Rho, residing over a group of 45 RIT students. I currently work at RIT Tech Crew, where I help run the audio and lighting for events around campus. I also work as a notetaker for my classes, taking notes for those deaf or hard of hearing. Furthermore, I work at Research Computing, where I do research into sending and recieving high quality video streams over networks.<hr>
+				<h3>Progress</h3>
+					<div id="left_right_content">
+						College:</br>
+						Tech Crew:</br>
+						Notetaking:</br>
+						Research:</br>
+						Life:
+					</div>	
+					<div id="progressBars">
+						<div class="progressBar" id="college"><div></div></div>
+						<div class="progressBar" id="tc"><div></div></div>
+						<div class="progressBar" id="notes"><div></div></div>
+						<div class="progressBar" id="rc"><div></div></div>
+						<div class="progressBar" id="life"><div></div></div>
+					</div>
+				</div>
+
 					
-				<img src="images/me.jpg" width="218px" height="327px">
+				
 			</div>
 		    <ul class="circles" id="example-two">
 		        <li style="background-image: url('images/it.png');"><a href="http://www.ist.rit.edu/"><p>IT</p></a></li>
@@ -76,15 +92,15 @@
 	
 	<div id="item3" style="background-color: #2C5379;" class="item">
 		<div class="content" >
-			<div class="text">
+			<div class="info">
 				<h2>In my time at college thus far I've</h2>
-				<div class="paragraph"> at the Rochester Institute of Technology, with a double minor in Game Development and Sociology. I am the Vice President of my fraternity, Kappa Delta Rho, residing over a group of 45 RIT students. I currently work at RIT Tech Crew, where I help run the audio and lighting for events around campus. I also work as a notetaker for my classes, taking notes for those deaf or hard of hearing. Furthermore, I work at Research Computing, where I do research into sending and recieving high quality video streams over networks.</div>
 				<img src="images/rit.jpg" width="218px" height="327px">
+				<div class="right_content"> at the Rochester Institute of Technology, with a double minor in Game Development and Sociology. I am the Vice President of my fraternity, Kappa Delta Rho, residing over a group of 45 RIT students. I currently work at RIT Tech Crew, where I help run the audio and lighting for events around campus. I also work as a notetaker for my classes, taking notes for those deaf or hard of hearing. Furthermore, I work at Research Computing, where I do research into sending and recieving high quality video streams over networks.</div>
 			</div>
 		    <ul class="circles" id="example-two">
 		        <li><a href="#item1" class="panel"><p>Home</p></a></li>
 		        <li><a href="#item2" class="panel"><p>About me</p></a></li>
-		        <li><a rel="#A41322" href="#item3" class="panel"><p>Portfolio</p></a></li>
+		        <li><a href="#item3" class="panel"><p>Portfolio</p></a></li>
 		        <li><a href="#item4" class="panel"><p>Contact</p></a></li>
 		    </ul>
 		</div>
@@ -92,11 +108,12 @@
 
 	<div id="item4" style="background-color: #A6382E;" class="item">
 		<div class="content">
-			<div class="text">
+			<div class="info">
 				<h2>In my time at college thus far I've</h2>
-				<div class="paragraph"> <a class="twitter-timeline" href="https://twitter.com/TeejBoyle" data-widget-id="368189699627548672">Tweets by @TeejBoyle</a>
-					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>  
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
+				<div class="right_content" id="twitter"> <a class="twitter-timeline" href="https://twitter.com/TeejBoyle" data-chrome="transparent" data-widget-id="368189699627548672">Tweets by @TeejBoyle</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div>  
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.<p>
 			</div>
 		    <ul class="circles" id="example-two">
 		        <li style="background-image: url('images/gmail.png');"><a href="index.html"><p>Email</p></a></li>
