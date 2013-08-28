@@ -35,7 +35,7 @@ function resizePanel() {
 // DOM Ready
 $(function() {
 
-    var $el, leftPos, newWidth;
+    var $el, $other, leftPos, newWidth;
         $mainNav2 = $("#example-two");
     
     /*
@@ -64,11 +64,11 @@ $(function() {
 			// Add the current class to the clicked a
 			$(this.parentNode).addClass("current_page_item");
 			$magicLine
-	        .width($(".current_page_item").width())
-	        .css("left", $(".current_page_item a").position().left)
-	        .data("origLeft", $magicLine.position().left)
-	        .data("origWidth", $magicLine.width())
-	        .data("origColor", $(".current_page_item a").attr("rel"));
+		        .width($(".current_page_item").width())
+		        .css("left", $(".current_page_item a").position().left)
+		        .data("origLeft", $magicLine.position().left)
+		        .data("origWidth", $magicLine.width())
+		        .data("origColor", $(".current_page_item a").attr("rel"));
 		}
 
 	).hover(
@@ -114,22 +114,24 @@ $(function() {
                 
     $("#example-two a").click(
     	function(){
-			
+			var addressValue = $(this).attr("href");
 			// Remove the current class from all a3 tags
-			$("#example-one li").removeClass("current_page_item");
 			// Add the current class to the clicked a
-			$("example-one li a").each(function(i) {
-				if($(i).attr("href") == $(this).attr("href")) 
+			$("#example-one li a").each(function() {
+				if($(this).attr("href") == addressValue) 
 				{
-					$(i.parentNode).addClass("current_page_item");
+					$other = $(this);
+					$("#example-one li").removeClass("current_page_item");
+					$(this.parentNode).addClass("current_page_item");
+					$magicLine
+				        .width($(".current_page_item").width())
+				        .css("left", $(".current_page_item a").position().left)
+				        .data("origLeft", $magicLine.position().left)
+				        .data("origWidth", $magicLine.width())
+				        .data("origColor", $(".current_page_item a").attr("rel"));
 				}
 			});
-			$magicLine
-	        .width($("#example-one a .current_page_item").width())
-	        .css("left", $(".current_page_item a").position().left)
-	        .data("origLeft", $magicLine.position().left)
-	        .data("origWidth", $magicLine.width())
-	        .data("origColor", $(".current_page_item a").attr("rel"));
+
 
 		}
 
@@ -142,12 +144,38 @@ $(function() {
             width: newWidth,
             backgroundColor: $el.attr("rel")
         })
+        
+        var addressValue = $(this).attr("href");
+        $("#example-one li a").each(function() {
+			if($(this).attr("href") == addressValue) 
+			{
+				$other = $(this);
+		        leftPos = $other.position().left;
+		        newWidth = $other.parent().width();
+		    	$magicLine.stop().animate({
+		            left: leftPos,
+		            width: newWidth,
+		            backgroundColor: $other.attr("rel")    
+		    	});
+		    	$(this).css("color", "white");
+		    }
+		});
     }, function() {
         $magicLineTwo.stop().animate({
             left: $magicLineTwo.data("origLeft"),
             width: $magicLineTwo.data("origWidth"),
             backgroundColor: $magicLineTwo.data("origColor")
-        });    
+        });
+
+        $("#example-one li a").each(function() {
+        	$(this).css("color", "#bbb");
+        });
+        
+    	$magicLine.stop().animate({
+            left: $magicLine.data("origLeft"),
+            width: $magicLine.data("origWidth"),
+            backgroundColor: $magicLine.data("origColor")
+        });       
     });
     
     /* Kick IE into gear */

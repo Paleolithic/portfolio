@@ -18,7 +18,7 @@ var progressBars = new Array();
 progressBars[0] = "setTimeout(function(){progressBar(50, $('#college'), '50%');},1500); "
 
 $(document).ready(function(){
-    $("#about_me").click(function(){
+    $(".about_me").click(function(){
 	  	setTimeout(function(){progressBar(50, $('#college'), '50%');},1500); 
 		setTimeout(function(){progressBar(50, $('#tc'), '2 years');},1700); 
 		setTimeout(function(){progressBar(25, $('#notes'), '1 year');},1900); 
