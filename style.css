@@ -64,7 +64,7 @@ h3{
 		word-spacing: 2px; 
 		display: inline-block; 
 		vertical-align: top; 
-		float: right;
+		float: right !important;
 		text-align: justify;
 	}
 
@@ -102,15 +102,23 @@ h3{
 		background-color: #7E7499;
 		padding: 0 10px 0 10px;
 	}
+
+	.info #sample {
+    border: 1px solid black;
+    height: 15px;
+    padding: 12px;
+    overflow: hidden;    
+}	
+
 #home{
 	position: relative;
 	font-size: 80px;
 	line-height: .8;
-	top: 120px;
-	background-image: none;
-	border: none;
-	
+	top: 60px;	
+	left: 25px;
 }
+
+
 
 
 
