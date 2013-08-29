@@ -84,12 +84,33 @@ $(function() {
 	            
 	            
 	        });
+
+
+		    var addressValue = $(this).attr("href");
+	        $("#example-two li a").each(function() {
+				if($(this).attr("href") == addressValue) 
+				{
+					$other = $(this);
+			        leftPos = $other.position().left;
+			        newWidth = $other.parent().width();
+			    	$magicLineTwo.stop().animate({
+			            left: leftPos,
+			            width: newWidth,
+			            backgroundColor: $other.attr("rel")    
+			    	});
+			    	$(this).css("color", "white");
+			    }
+			});
     	}, function() {
 	        $magicLine.stop().animate({
 	            left: $magicLine.data("origLeft"),
 	            width: $magicLine.data("origWidth"),
 	            backgroundColor: $magicLine.data("origColor")
-	        });    
+	        }); 
+
+	        $("#example-two li a").each(function() {
+        		$(this).css("color", "#bbb");
+        	});   
 	    }
 	);
 
@@ -114,11 +135,11 @@ $(function() {
                 
     $("#example-two a").click(
     	function(){
-			var addressValue = $(this).attr("href");
+			var addressValue2 = $(this).attr("href");
 			// Remove the current class from all a3 tags
 			// Add the current class to the clicked a
 			$("#example-one li a").each(function() {
-				if($(this).attr("href") == addressValue) 
+				if($(this).attr("href") == addressValue2) 
 				{
 					$other = $(this);
 					$("#example-one li").removeClass("current_page_item");
@@ -145,9 +166,9 @@ $(function() {
             backgroundColor: $el.attr("rel")
         })
         
-        var addressValue = $(this).attr("href");
+        var addressValue2 = $(this).attr("href");
         $("#example-one li a").each(function() {
-			if($(this).attr("href") == addressValue) 
+			if($(this).attr("href") == addressValue2) 
 			{
 				$other = $(this);
 		        leftPos = $other.position().left;
