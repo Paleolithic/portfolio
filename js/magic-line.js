@@ -110,7 +110,13 @@ $(function() {
 
 	        $("#example-two li a").each(function() {
         		$(this).css("color", "#bbb");
-        	});   
+        	}); 
+
+        	$magicLineTwo.stop().animate({
+            	left: $magicLineTwo.data("origLeft"),
+            	width: $magicLineTwo.data("origWidth"),
+            	backgroundColor: $magicLineTwo.data("origColor")
+        	});      
 	    }
 	);
 
