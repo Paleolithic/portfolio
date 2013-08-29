@@ -171,6 +171,7 @@ $(function() {
             width: newWidth,
             backgroundColor: $el.attr("rel")
         })
+        $el.css("color", "white");
         
         var addressValue2 = $(this).attr("href");
         $("#example-one li a").each(function() {
@@ -184,7 +185,7 @@ $(function() {
 		            width: newWidth,
 		            backgroundColor: $other.attr("rel")    
 		    	});
-		    	$(this).css("color", "white");
+		    	$other.css("color", "white");
 		    }
 		});
     }, function() {
@@ -195,6 +196,10 @@ $(function() {
         });
 
         $("#example-one li a").each(function() {
+        	$(this).css("color", "#bbb");
+        });
+
+        $("#example-two li a").each(function() {
         	$(this).css("color", "#bbb");
         });
         
