@@ -36,7 +36,7 @@ function resizePanel() {
 $(function() {
 
     var $el, $other, leftPos, newWidth;
-        $mainNav2 = $("#example-two");
+        $mainNav2 = $(".example-two");
     
     /*
         EXAMPLE ONE
@@ -87,7 +87,7 @@ $(function() {
 
 
 		    var addressValue = $(this).attr("href");
-	        $("#example-two li a").each(function() {
+	        $(".example-two li a").each(function() {
 				if($(this).attr("href") == addressValue) 
 				{
 					$other = $(this);
@@ -108,7 +108,7 @@ $(function() {
 	            backgroundColor: $magicLine.data("origColor")
 	        }); 
 
-	        $("#example-two li a").each(function() {
+	        $(".example-two li a").each(function() {
         		$(this).css("color", "#bbb");
         	}); 
 
@@ -126,9 +126,7 @@ $(function() {
     /*
         EXAMPLE TWO
     */
-    
-    $mainNav2.append("<li id='magic-line-two'></li>");
-    
+       
     var $magicLineTwo = $("#magic-line-two");
     
     $magicLineTwo
@@ -139,7 +137,7 @@ $(function() {
         .data("origWidth", $magicLineTwo.width())
         .data("origColor", $(".current_page_item_two a").attr("rel"));
                 
-    $("#example-two a").click(
+    $(".example-two a").click(
     	function(){
 			var addressValue2 = $(this).attr("href");
 			// Remove the current class from all a3 tags
@@ -199,7 +197,7 @@ $(function() {
         	$(this).css("color", "#bbb");
         });
 
-        $("#example-two li a").each(function() {
+        $(".example-two li a").each(function() {
         	$(this).css("color", "#bbb");
         });
         

@@ -56,7 +56,7 @@
 	color: #bbb; 
 	font-size: 16px; 
 	float: right;
-	padding: 0px 10px 4px 10px;
+	padding: 15px 10px 4px 10px;
 	text-decoration: none;
 	text-transform: uppercase;
 	height: 46px;
@@ -85,7 +85,7 @@
 }
 
 /* Example Two */
-#example-two {
+.example-two {
 	margin-left: auto;
 	margin-right:auto;
 	width: 700px;
@@ -93,7 +93,7 @@
 	position: relative;
 	
 }
-#example-two li { 
+.example-two li { 
 	display: inline-block;
 	width: 150px;
 	height: 150px;
@@ -102,31 +102,28 @@
 	cursor: pointer;
 
 }
-#example-two li a { 
+.example-two li a { 
 	position: relative; 
-	z-index: 200; 
 	color: #bbb; 
+	z-index: 300;
 	font-size: 20px; 
 	display: block; 
-	float: left; 
-	padding: 6px 0 4px 0px;
 	text-decoration: none;
-	text-transform: uppercase; 
+	text-transform: uppercase;
+	background: rgba(0, 0, 0, 0.9);
 	text-align: center;
-	margin-top: 38px;
+	margin-top: 40%;
 	margin-left: auto;
 	margin-right: auto;
-	width: 150px;
-
-	
+	width: 80%;
 
 }
 
-#example-two li a:hover { 
+.example-two li a:hover { 
 	color: white; 
 }
 
-#example-two li img{
+.example-two li img{
 	position: absolute;
 	margin-top: -45px;
 	margin-left: -1px;
@@ -136,19 +133,19 @@
 }
 
 
-#example-two li p{
-	background: rgba(0, 0, 0, 0.7);
-	width: 137px;
+.example-two li p{
+	z-index: 0;
 	margin-left: auto;
 	margin-right: auto;
 	visibility: hidden;
+	z-index: 0;
 }
 
-#example-two li:hover p{
+.example-two li:hover p{
 	visibility: visible;
-}
+} 
 
-#example-two #magic-line-two { 
+.example-two #magic-line-two { 
 	position: absolute; 
 	top: -1px; 
 	left: 0; 
@@ -165,7 +162,7 @@
 	color: white !important; 
 }
 
-.ie6 #example-two li, .ie7 #example-two li {
+.ie6 .example-two li, .ie7 .example-two li {
 	display: inline;
 }
 
