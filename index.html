@@ -11,25 +11,8 @@
 <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
 <script type="text/javascript" src="js/jquery.color-RGBa-patch.js"></script>
 <script type="text/javascript" src="js/magic-line.js"></script>
-<script type="text/javascript" src="js/progressbar.js"></script>
+<script type="text/javascript" src="js/sliders.js"></script>
 <script type="text/javascript" src="js/expand.js"></script>
-<script type="text/javascript">
-	//SCRIPT GOES HERE
-$(document).ready(function(){
-	(function($) {
-    
-		var allPanels = $('.accordion > dd').hide();
-		 
-		$('#start').parent().next().slideDown();   
-		$('.accordion > dt > a').click(function() {
-		  allPanels.slideUp();
-		  $(this).parent().next().slideDown();
-		  return false;
-		});
-
-	})(jQuery);
-});
-</script>
 </head>
 <body>
 
@@ -39,7 +22,7 @@ $(document).ready(function(){
 		<ul class="circles" id="example-one">
 	    	<li class="current_page_item"><a rel="#fe4902" href="#item1" class="panel unload" id="ho">Home</a></li>
 	    	<li><a rel="#C6AA01" href="#item2" class="panel about_me">About me</a></li>
-	    	<li><a rel="#A41322" href="#item3" class="panel unload" id="portfolio">Portfolio</a></li>
+	    	<li><a rel="#A41322" href="#item3" class="panel portfolio" id="portfolio">Portfolio</a></li>
 	    	<li><a rel="#7E7499" href="#item4" class="panel unload" id="contact">Contact</a></li>
 		</ul>
 	</div>
@@ -54,7 +37,7 @@ $(document).ready(function(){
 		    <ul class="example-two" >
 		        <li class="current_page_item_two"><p style="visibility: visible;"><a style="background: rgba(0,0,0,0);" rel="#fe4902" href="#item1" class="panel unload">Home</a></p></li>
 		        <li><p style="visibility: visible;"><a style="background: rgba(0,0,0,0);" rel="#C6AA01" href="#item2" class="panel about_me">About me</a></p></li>
-		        <li><p style="visibility: visible;"><a style="background: rgba(0,0,0,0);" rel="#A41322" href="#item3" class="panel unload">Portfolio</a></p></li>
+		        <li><p style="visibility: visible;"><a style="background: rgba(0,0,0,0);" rel="#A41322" href="#item3" class="panel portfolio">Portfolio</a></p></li>
 		        <li><p style="visibility: visible;"><a style="background: rgba(0,0,0,0);" rel="#7E7499" href="#item4" class="panel unload">Contact</a></p></li>
 		        <li id='magic-line-two'></li>
 		    </ul>
@@ -101,7 +84,7 @@ $(document).ready(function(){
 				<div class="right-content">
 					<dl class="accordion">
 
-						<dt><a href="" id="start"><h3>Education</h3></a></dt>
+						<dt><h3><a href="" id="start">Education</a></h3></dt>
 						<dd>
 							<p><strong>Rochester Institute of Technology, Rochester NY.</strong></p>
 							<p><strong>GRADUATION:</strong> May, 2015</p>
@@ -112,7 +95,7 @@ $(document).ready(function(){
 							<p>· Student Ambassador for the GCCIS college at RIT</p>
 						</dd>
 
-						<dt><a href=""><h3>Technical Skills</h3></a></dt>
+						<dt><h3><a href="">Technical Skills</a></h3></dt>
 						<dd>
 							<p><strong>PROGRAMMING LANGUAGES:</strong></p>
 							<p>· Java ; C++ ; C# ; Visual Basic ; ActionScript 3</p>
@@ -123,7 +106,7 @@ $(document).ready(function(){
 							<p>· OS X Mountain Lion ; Windows 98, XP, 7, 8 ; Linux ; Cisco IOS</p>
 						</dd>
 
-						<dt><a href=""><h3>Employment History</h3></a></dt>
+						<dt><h3><a href="">Employment History</a></h3></dt>
 						<dd>
 							<p><strong>RESEARCH COMPUTING, March 2013 - Present</strong></p>
 							<p>· Research Assistant</p>
