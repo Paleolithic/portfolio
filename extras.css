@@ -218,6 +218,8 @@
 .accordion dt a, .accordion dd a
 {
     color: inherit;
+    font-size: 1.17em;
+    font-weight: bold;
 
 }
 
@@ -241,89 +243,3 @@
 	margin: 0;
 	padding: 0;
 }
-
-/*
-.ac-container{
-    position: relative;
-	width: 60%; 
-	display: inline-block; 
-	vertical-align: top; 
-	float: right;
-}
-
-.ac-container label{
-    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-    padding: 5px 20px;
-    position: relative;
-    z-index: 20;
-    display: block;
-    height: 30px;
-    cursor: pointer;
-    color: #777;
-    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
-    line-height: 33px;
-    font-size: 19px;
-    background: linear-gradient(top, #ffffff 1%,#eaeaea 100%);
-    box-shadow: 
-        0px 0px 0px 1px rgba(155,155,155,0.3), 
-        1px 0px 0px 0px rgba(255,255,255,0.9) inset, 
-        0px 2px 2px rgba(0,0,0,0.1);
-}
-
-.ac-container label:hover{
-    background: #fff;
-}
-
-.ac-container input:checked + label,
-.ac-container input:checked + label:hover{
-    background: #c6e1ec;
-    color: #3d7489;
-    text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
-    box-shadow: 
-        0px 0px 0px 1px rgba(155,155,155,0.3), 
-        0px 2px 2px rgba(0,0,0,0.1);
-}
-
-.ac-container input{
-    display: none;
-}
-
-.ac-container article{
-
-
-    background: rgba(255, 255, 255, 0.5);
-    margin-top: -1px;
-    overflow: hidden;
-    height: 0px;
-    position: relative;
-    z-index: 10;
-    transition: 
-        height 0.3s ease-in-out, 
-        box-shadow 0.6s linear;
-}
-.ac-container input:checked ~ article{
-    transition: 
-        height 0.5s ease-in-out, 
-        box-shadow 0.1s linear;
-    box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
-}
-
-.ac-container input:checked ~ article.ac-small{
-    height: 140px;
-}
-.ac-container input:checked ~ article.ac-medium{
-    height: 180px;
-}
-.ac-container input:checked ~ article.ac-large{
-    height: 230px;
-}
-
-.ac-container article p{
-	display: block;
-	position: relative;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-*/

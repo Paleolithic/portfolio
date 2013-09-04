@@ -107,7 +107,9 @@ $(function() {
 	            width: $magicLine.data("origWidth"),
 	            backgroundColor: $magicLine.data("origColor")
 	        }); 
-
+	        $("#example-one li a").each(function() {
+	        	$(this).css("color", "#bbb");
+	        });
 	        $(".example-two li a").each(function() {
         		$(this).css("color", "#bbb");
         	}); 

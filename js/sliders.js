@@ -22,9 +22,9 @@ progressBars[0] = "setTimeout(function(){progressBar(50, $('#college'), '50%');}
 $(document).ready(function(){    
 	var allPanels = $('.accordion > dd').hide();
 	   
-	$('.accordion > dt > h3 > a').click(function() {
+	$('.accordion > dt > a').click(function() {
 	  allPanels.slideUp();
-	  $(this).parent().parent().next().slideDown();
+	  $(this).parent().next().slideDown();
 	  return false;
 	});
 
@@ -53,6 +53,6 @@ $(document).ready(function(){
 		setTimeout(function(){progressBar(0, $('#notes'), '');},300); 
 		setTimeout(function(){progressBar(0, $('#rc'), '');},300); 
 		setTimeout(function(){progressBar(0, $('#life'), '');},300);
-  		setTimeout(function(){$('#start').parent().parent().next().slideDown();},1500);
+  		setTimeout(function(){$('#start').parent().next().slideDown();},1500);
   	});
 });
