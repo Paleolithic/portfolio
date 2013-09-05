@@ -122,6 +122,18 @@ h3{
 	left: 25px;
 }
 
+#item1 .example-two p{
+	visibility: visible;
+}
+
+#item1 .example-two a{
+	background: rgba(0,0,0,0);
+}
+
+#item1 .example-two li a { 
+	width: 100%;
+}
+
 /*#item1{
 	border-width:0px 3000px 0px 0px;
 	-moz-border-image:url("images/zigzag.png") 100 repeat stretch;
