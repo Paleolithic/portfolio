@@ -102,7 +102,8 @@
 	cursor: pointer;
 
 }
-.example-two li a { 
+.example-two li a {
+
 	position: relative; 
 	color: #bbb; 
 	z-index: 300;
@@ -112,10 +113,12 @@
 	text-transform: uppercase;
 	background: rgba(0, 0, 0, 0.9);
 	text-align: center;
-	margin-top: 40%;
+	margin-top: -17px;
+	padding-top: 40%;
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
+	height: 90px;
 
 }
 
