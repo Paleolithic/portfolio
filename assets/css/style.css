@@ -9,24 +9,23 @@ body {
 
 a{
 	text-decoration: none;
+	color: #bbb;
 
 }
 h1{
-	font-weight: normal;
 	margin: 0;
 	padding: 0;
+	font-weight: normal;
 }
 
 h2{
-	width: 650px;
-	position: relative; 
-	font-size: 28pt; 
-	margin: 0;
+	margin: 0 auto 0 auto;
 	padding: 0;
+	position: relative; 
+	width: 650px;
 	left: 75px;
+	font-size: 28pt; 
 	font-weight: normal;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 h3{
@@ -37,53 +36,50 @@ h3{
 #nav-wrap{
 	position: fixed;
 	height: 46px;
+	width: 100%;
 	z-index: 1000;
 	background-image: url('../images/dirty_old_shirt.png'); 
-	width: 100%;
 
 }
 
 #nav-wrap h1{
+	margin: -8 0 0 30px;
 	position: absolute;
-	top: 50%;
-	margin-top: -8px;
-	margin-left: 30px;
 	float: left;
+	top: 50%;
 	font-size: 16pt;
 	line-height: .8;
 }
 
 .info{
+	margin-right: auto;
+	margin-left: auto;
 	position: relative;
 	height: 400px;
 	width: 650px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 	.info .right_content{
 		position: relative;
-		width: 60%; 
-		line-height:1.2; 
-		word-spacing: 2px; 
 		display: inline-block; 
-		vertical-align: top; 
+		width: 60%; 
 		float: right !important;
+		vertical-align: top; 
 		text-align: justify;
+		word-spacing: 2px; 
+		line-height:1.2; 
 	}
 
 	.info .right_content #left_right_content{
-		float:left;
 		width: 20%;
-
+		float:left;
 	}
 
 	.info .right_content #progressBars {
-		margin:0;
+		margin:0 4px 0 0;
 		padding:0;
 		width: 78%;
 		float: right;
-		margin-right: 4px;
 	}
 
 	.info p{
@@ -97,29 +93,29 @@ h3{
 	.info img{
 		position: relative; 
 		display: inline-block; 
-		vertical-align: top; 
 		float:left;
+		vertical-align: top; 
 	}
 
 	.info #twitter{
 		/*background-image: url('../assets/images/dirty_old_shirt.png');*/
-		background-color: #7E7499;
 		padding: 0 10px 0 10px;
+		background-color: #7E7499;
 	}
 
 	.info #sample {
-    border: 1px solid black;
-    height: 15px;
     padding: 12px;
+    height: 15px;
     overflow: hidden;    
+    border: 1px solid black;
 }	
 
 #item1 .info{
 	position: relative;
+	left: 25px;
+	top: 60px;	
 	font-size: 80px;
 	line-height: .8;
-	top: 60px;	
-	left: 25px;
 }
 
 #item1 .example-two p{
