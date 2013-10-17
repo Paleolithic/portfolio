@@ -38,7 +38,7 @@ h3{
 	position: fixed;
 	height: 46px;
 	z-index: 1000;
-	background-image: url('images/dirty_old_shirt.png'); 
+	background-image: url('../images/dirty_old_shirt.png'); 
 	width: 100%;
 
 }
@@ -102,7 +102,7 @@ h3{
 	}
 
 	.info #twitter{
-		background-image: url('images/dirty_old_shirt.png');
+		/*background-image: url('../assets/images/dirty_old_shirt.png');*/
 		background-color: #7E7499;
 		padding: 0 10px 0 10px;
 	}
@@ -114,7 +114,7 @@ h3{
     overflow: hidden;    
 }	
 
-#home{
+#item1 .info{
 	position: relative;
 	font-size: 80px;
 	line-height: .8;

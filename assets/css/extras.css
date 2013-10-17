@@ -171,7 +171,7 @@
 		width: 100%;
 		height: 12px;
 		border: 1px solid #111;
-		background-image: url('images/dirty_old_shirt.png');
+		/*background-image: url('../images/dirty_old_shirt.png');*/
 		border-radius: 3px;
 		margin: 4px;
 
@@ -225,7 +225,7 @@
 
 .accordion dd {
 
-	background-image: url('images/dirty_old_shirt.png');
+	/*background-image: url('../images/dirty_old_shirt.png');*/
     border-top: 0; 
     font-size: inherit;
     text-align: justify;
