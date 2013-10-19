@@ -59,6 +59,22 @@ h3{
 	width: 650px;
 }
 
+.info p{
+	width: 35%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: justify;
+	line-height:1.2; 
+	word-spacing: 2px; 
+}
+
+.info img{
+	position: relative; 
+	display: inline-block; 
+	float:left;
+	vertical-align: top; 
+}
+
 	.info .right_content{
 		position: relative;
 		display: inline-block; 
@@ -82,25 +98,32 @@ h3{
 		float: right;
 	}
 
-	.info p{
-		width: 35%;
-		display: inline-block;
-		vertical-align: top;
-		text-align: justify;
-		line-height:1.2; 
-		word-spacing: 2px; 
-	}
-	.info img{
-		position: relative; 
+	.info .right_content{
+		position: relative;
 		display: inline-block; 
-		float:left;
+		width: 60%; 
+		float: right !important;
 		vertical-align: top; 
+		text-align: justify;
+		word-spacing: 2px; 
+		line-height:1.2; 
+	}
+
+	.info .left_content{
+		position: relative;
+		display: inline-block; 
+		width: 32%; 
+		float: left !important;
+		vertical-align: top; 
+		text-align: justify;
+		word-spacing: 2px; 
+		line-height:1.2; 
 	}
 
 	.info #twitter{
 		/*background-image: url('../assets/images/dirty_old_shirt.png');*/
 		padding: 0 10px 0 10px;
-		background-color: #7E7499;
+		background-color: #315733;
 	}
 
 	.info #sample {
@@ -126,16 +149,12 @@ h3{
 	background: rgba(0,0,0,0);
 }
 
-#item1 .example-two li a { 
-	width: 100%;
+#slideshowHolder{
+	position: relative;
+	width: 218px;
+	height: 327px;
 }
 
-/*#item1{
-	border-width:0px 3000px 0px 0px;
-	-moz-border-image:url("images/zigzag.png") 100 repeat stretch;
-	-webkit-border-image:url("images/zigzag.png") 75 stretch;
-	border-right-image:url("images/zigzag.png") 20 repeat stretch;
-}
-*/
+
 
 

@@ -96,7 +96,7 @@
 	width: 150px;
 	height: 150px;
 	border-radius: 100%; 
-
+	
 	cursor: pointer;
 
 }
@@ -152,6 +152,7 @@
 	-moz-border-radius: 100%; 
 	-webkit-border-radius: 100%; 
 	border-radius: 100%; 
+	background-color: #fe4902;
 }
 
 
@@ -202,16 +203,22 @@
 	padding: 5px;
   font-family: inherit;
 	font-size: 0.9em;
-    border-bottom: 1px solid black;
-    &:last-of-type {
-        border-bottom: 1px solid black; 
-		}
+  border-bottom: 1px solid black;
+  &:last-of-type {
+      border-bottom: 1px solid black; 
+	}
 }
 
 .accordion dt a, .accordion dd a{
-    color: inherit;
-    font-size: 1.17em;
-    font-weight: bold;
+  color: inherit;
+  font-size: 1.17em;
+  font-weight: bold;
+  position: relative;
+}
+
+.accordion dt a{
+	display: block;
+  width: 100%;
 }
 
 .accordion dd {
