@@ -19,7 +19,13 @@ var allPanels = $('.accordion > dd').hide();
 var progressBars = new Array();
 progressBars[0] = "setTimeout(function(){progressBar(50, $('#college'), '50%');},1500); "
 
-$(document).ready(function(){    
+$(document).ready(function(){ 
+
+    $('#slideshowHolder').jqFancyTransitions({ 
+        width: 218, height: 317 
+    });   
+
+    
 	var allPanels = $('.accordion > dd').hide();
 	   
 	$('.accordion > dt > a').click(function() {
