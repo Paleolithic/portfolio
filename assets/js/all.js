@@ -130,94 +130,93 @@ $(document).ready(function(){
     outFunction($magicLine, $magicLineTwo);    
     });
 
-    $(".example-two a").click(
-    function(){
-    var addressValue2 = $(this).attr("href");
-    // Remove the current class from all a3 tags
-    // Add the current class to the clicked a
-    $("#example-one li a").each(function() {
+    $(".example-two a").click(function(){
+      var addressValue2 = $(this).attr("href");
+      // Remove the current class from all a3 tags
+      // Add the current class to the clicked a
+      $("#example-one li a").each(function() {
         if($(this).attr("href") == addressValue2) {
             clicked($(this.parentNode));
-      }
-    });
+        }
+      });
     }).hover(function() {
-    inFunction($(this), "#example-one li a", $magicLineTwo, $magicLine);
+      inFunction($(this), "#example-one li a", $magicLineTwo, $magicLine);
     }, function() {    
-    outFunction($magicLineTwo, $magicLine);
+      outFunction($magicLineTwo, $magicLine);
     });
 
     function setVariables(line, currPageItem){
-    line
-      .width($(currPageItem).width())
-      .css("left", $(currPageItem + " a").position().left)
-      .data("origLeft", $(currPageItem + " a").position().left)
-      .data("origWidth", $(line).width())
-      .data("origColor", $(currPageItem + " a").attr("rel")); 
-    if(currPageItem == ".current_page_item_two"){
-      line.height($mainNav2.height())
-    }   
+      line
+        .width($(currPageItem).width())
+        .css("left", $(currPageItem + " a").position().left)
+        .data("origLeft", $(currPageItem + " a").position().left)
+        .data("origWidth", $(line).width())
+        .data("origColor", $(currPageItem + " a").attr("rel")); 
+      if(currPageItem == ".current_page_item_two"){
+        line.height($mainNav2.height())
+      }   
     }
 
     function clicked(clickedParentItem){
-    // Remove the current class from all a tags
-    $("#example-one li").removeClass("current_page_item");
-    // Add the current class to the clicked a
-    clickedParentItem.addClass("current_page_item");
-    //$(clickedItem.parentNode).addClass("current_page_item");
-    $magicLine
-      .width($(".current_page_item").width())
-      .css("left", $(".current_page_item a").position().left)
-      .data("origLeft", $magicLine.position().left)
-      .data("origWidth", $magicLine.width())
-      .data("origColor", $(".current_page_item a").attr("rel"));
+      // Remove the current class from all a tags
+      $("#example-one li").removeClass("current_page_item");
+      // Add the current class to the clicked a
+      clickedParentItem.addClass("current_page_item");
+      //$(clickedItem.parentNode).addClass("current_page_item");
+      $magicLine
+        .width($(".current_page_item").width())
+        .css("left", $(".current_page_item a").position().left)
+        .data("origLeft", $magicLine.position().left)
+        .data("origWidth", $magicLine.width())
+        .data("origColor", $(".current_page_item a").attr("rel"));
     }
 
     function inFunction(hoverItem, list, line, otherLine){
-    leftPos = hoverItem.position().left;
-    newWidth = hoverItem.parent().width();
-    line.stop().animate({
-      left: leftPos,
-      width: newWidth,
-      backgroundColor: hoverItem.attr("rel")
-    })
-    hoverItem.css("color", "white");
+      leftPos = hoverItem.position().left;
+      newWidth = hoverItem.parent().width();
+      line.stop().animate({
+        left: leftPos,
+        width: newWidth,
+        backgroundColor: hoverItem.attr("rel")
+      })
+      hoverItem.css("color", "white");
 
-    addressVal = hoverItem.attr("href");
-    $(list).each(function() {
-     if($(this).attr("href") == addressVal) 
-     {
-      $other = $(this);
-      leftPos = $other.position().left;
-      newWidth = $other.parent().width();
+      addressVal = hoverItem.attr("href");
+      $(list).each(function() {
+        if($(this).attr("href") == addressVal) {
+          $other = $(this);
+          leftPos = $other.position().left;
+          newWidth = $other.parent().width();
 
-      otherLine.stop().animate({
-       left: leftPos,
-       width: newWidth,
-       backgroundColor: $other.attr("rel")    
-     });
-      $(this).css("color", "white");
-    }
-    });
+          otherLine.stop().animate({
+            left: leftPos,
+            width: newWidth,
+            backgroundColor: $other.attr("rel")    
+         });
+          
+          $(this).css("color", "white");
+        }
+      });
     }
 
     function outFunction(line, otherLine){
-    line.stop().animate({
-      left: line.data("origLeft"),
-      width: line.data("origWidth"),
-      backgroundColor: line.data("origColor")
-    }); 
+      line.stop().animate({
+        left: line.data("origLeft"),
+        width: line.data("origWidth"),
+        backgroundColor: line.data("origColor")
+      }); 
 
-    $("#example-one li a").each(function() {
+      $("#example-one li a").each(function() {
+          $(this).css("color", "#bbb");
+      });
+      $(".example-two li a").each(function() {
         $(this).css("color", "#bbb");
-    });
-    $(".example-two li a").each(function() {
-      $(this).css("color", "#bbb");
-    }); 
+      }); 
 
-    otherLine.stop().animate({
-        left: otherLine.data("origLeft"),
-        width: otherLine.data("origWidth"),
-        backgroundColor: otherLine.data("origColor")
-    });
+      otherLine.stop().animate({
+          left: otherLine.data("origLeft"),
+          width: otherLine.data("origWidth"),
+          backgroundColor: otherLine.data("origColor")
+      });
     }
 });

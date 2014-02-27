@@ -1,242 +1,258 @@
+/* line 1, ../sass/extras.scss */
 #wrapper {
-	width:100%;
-	height:100%;
-	position:absolute;
-	top:0;left:0;
-	overflow:hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
 }
 
-	#mask {
-		width:400%;
-		height:100%;
-	}
+/* line 9, ../sass/extras.scss */
+#mask {
+  width: 400%;
+  height: 100%;
+}
 
-	.item {
-		width:25%;
-		height:100%;
-		float:left;
+/* line 14, ../sass/extras.scss */
+.item {
+  width: 25%;
+  height: 100%;
+  float: left;
+}
 
-	}
-	
-	.content {
-		width:100%;
-		height:100%;
-		top: 10%;
-		margin:0 auto;
-		position:relative;
+/* line 21, ../sass/extras.scss */
+.content {
+  width: 100%;
+  height: 100%;
+  top: 10%;
+  margin: 0 auto;
+  position: relative;
+}
 
-	}
-	
-	.clear {
-		clear:both;
-	}
+/* line 30, ../sass/extras.scss */
+.clear {
+  clear: both;
+}
 
 /* Clearfix */
-.circles:after { visibility: hidden; display: block; content: ""; clear: both; height: 0; }
-*:first-child+html .circles { zoom: 1; } /* IE7 */
+/* line 35, ../sass/extras.scss */
+.circles:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
 
+/* line 36, ../sass/extras.scss */
+*:first-child + html .circles {
+  zoom: 1;
+}
+
+/* IE7 */
 /* Example One */
+/* line 39, ../sass/extras.scss */
 #example-one {
-	margin: 0 auto;
-	list-style: none; 
-	position: relative; 
-	float:left;
-	top: -4px;
-	left: 20px;
-	height: 46px;
-
-
-}
-#example-one li { 
-	display: inline-block;
+  margin: 0 auto;
+  list-style: none;
+  position: relative;
+  float: left;
+  top: -4px;
+  left: 20px;
+  height: 46px;
 }
 
-#example-one a { 
-	font-size: 16px; 
-	float: left;
-	padding: 15px 10px 4px 10px;
-	text-transform: uppercase;
-	height: inherit;
+/* line 52, ../sass/extras.scss */
+#magic-line {
+  position: absolute;
+  bottom: 6px;
+  width: 100px;
+  height: 2px;
+  background: #fe4902;
 }
 
-#example-one a:hover, .current_page_item a { 
-	color: white !important; 
+/* line 62, ../sass/extras.scss */
+.ie6 #example-one li, .ie7 #example-one li {
+  display: inline;
 }
 
-
-#magic-line { 
-	position: absolute;
- 	bottom: 6px;
-	width: 100px; 
-	height: 2px; 
-	background: #fe4902;
-}
-
-
-
-.ie6 #example-one li, .ie7 #example-one li { 
-	display: inline; 
-}
+/* line 65, ../sass/extras.scss */
 .ie6 #magic-line {
-	bottom: 22px;
+  bottom: 22px;
 }
 
 /* Example Two */
+/* line 70, ../sass/extras.scss */
 .example-two {
-	margin-left: auto;
-	margin-right:auto;
-	width: 700px;
-	list-style: none; 
-	position: relative;
-	
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  list-style: none;
+  position: relative;
 }
-.example-two li { 
-	margin-right: 20px;
-	display: inline-block;
-	width: 150px;
-	height: 150px;
-	border-radius: 100%; 
-	
-	cursor: pointer;
 
+/* line 78, ../sass/extras.scss */
+.example-two li {
+  margin-right: 20px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  cursor: pointer;
 }
+
+/* line 88, ../sass/extras.scss */
 .example-two li a {
-	margin: -16px auto 0 auto;
-	padding-top: 40%;
-	position: relative;
-	display: block;  
-	height: 90px;
-	border-radius: 75px;
-
-	z-index: 300;
-	font-size: 20px; 
-
-	background: rgba(0, 0, 0, 0.8);
-	text-decoration: none;
-	text-transform: uppercase;
-	text-align: center;
+  margin: -16px auto 0 auto;
+  padding-top: 40%;
+  position: relative;
+  display: block;
+  height: 90px;
+  border-radius: 75px;
+  z-index: 300;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.example-two li a:hover { 
-	color: white; 
+/* line 105, ../sass/extras.scss */
+.example-two li a:hover {
+  color: white;
 }
 
-.example-two li img{
-	margin-top: -45px;
-	margin-left: -1px;
-	position: absolute;
-	width: 154px;
-	height: 154px;
-	left: 0px;
+/* line 109, ../sass/extras.scss */
+.example-two li img {
+  margin-top: -45px;
+  margin-left: -1px;
+  position: absolute;
+  width: 154px;
+  height: 154px;
+  left: 0px;
 }
 
-
-.example-two li p{
-	margin-left: auto;
-	margin-right: auto;
-	z-index: 0;
-	visibility: hidden;
+/* line 119, ../sass/extras.scss */
+.example-two li p {
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 0;
+  visibility: hidden;
 }
 
-.example-two li:hover p{
-	visibility: visible;
-} 
-
-.example-two #magic-line-two { 
-	position: absolute;
-	width: 100px;  
-	top: -1px; 
-	left: 0; 
-	background: #900; 
-	z-index: 100; 
-	-moz-border-radius: 100%; 
-	-webkit-border-radius: 100%; 
-	border-radius: 100%; 
-	background-color: #fe4902;
+/* line 126, ../sass/extras.scss */
+.example-two li:hover p {
+  visibility: visible;
 }
 
-
-.current_page_item_two a { 
-	color: white !important; 
+/* line 130, ../sass/extras.scss */
+.example-two #magic-line-two {
+  position: absolute;
+  width: 100px;
+  top: -1px;
+  left: 0;
+  background: #900;
+  z-index: 100;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  background-color: #fe4902;
 }
 
+/* line 144, ../sass/extras.scss */
+.current_page_item_two a {
+  color: white !important;
+}
+
+/* line 148, ../sass/extras.scss */
 .ie6 .example-two li, .ie7 .example-two li {
-	display: inline;
+  display: inline;
 }
 
-
+/* line 153, ../sass/extras.scss */
 .progressBar {
-	margin: 4px;
-	width: 100%;
-	height: 12px;
-	border: 1px solid #111;
-	/*background-image: url('../images/dirty_old_shirt.png');*/
-	border-radius: 3px;
+  margin: 4px;
+  width: 100%;
+  height: 12px;
+  border: 1px solid #111;
+  /*background-image: url('../images/dirty_old_shirt.png');*/
+  border-radius: 3px;
 }
 
+/* line 162, ../sass/extras.scss */
 .progressBar div {
-		height: 100%;
-		color: #fff;
-		text-align: left;
-		padding-left: 5px;
-		font-size: 10pt;
-		line-height: 12px; /* same as #progressBar height if we want text middle aligned */
-		width: 0;
-		background-color: #C6AA01;
-		border-top-left-radius: 3px;
-		border-bottom-left-radius: 3px;
+  height: 100%;
+  color: #fff;
+  text-align: left;
+  padding-left: 5px;
+  font-size: 10pt;
+  line-height: 12px;
+  /* same as #progressBar height if we want text middle aligned */
+  width: 0;
+  background-color: #C6AA01;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
+/* line 175, ../sass/extras.scss */
 .accordion {
-	margin: 0px;
-	display: inline-block;
-	vertical-align: top;
-	width: 60%;
-	float: right;
+  margin: 0px;
+  display: inline-block;
+  vertical-align: top;
+  width: 60%;
+  float: right;
 }
 
+/* line 183, ../sass/extras.scss */
 .accordion dt {
-	background-color: #A41322;
+  background-color: #A41322;
 }
 
+/* line 187, ../sass/extras.scss */
 .accordion dt, .accordion dd {
-	padding: 5px;
+  padding: 5px;
   font-family: inherit;
-	font-size: 0.9em;
+  font-size: 0.9em;
   border-bottom: 1px solid black;
-  &:last-of-type {
-      border-bottom: 1px solid black; 
-	}
+}
+/* line 192, ../sass/extras.scss */
+.accordion dt:last-of-type, .accordion dd:last-of-type {
+  border-bottom: 1px solid black;
 }
 
-.accordion dt a, .accordion dd a{
+/* line 197, ../sass/extras.scss */
+.accordion dt a, .accordion dd a {
   color: inherit;
   font-size: 1.17em;
   font-weight: bold;
   position: relative;
 }
 
-.accordion dt a{
-	display: block;
+/* line 204, ../sass/extras.scss */
+.accordion dt a {
+  display: block;
   width: 100%;
 }
 
+/* line 209, ../sass/extras.scss */
 .accordion dd {
-	/*background-image: url('../images/dirty_old_shirt.png');*/
-    margin: 0;
-    border-top: 0; 
-    font-size: inherit;
-    text-align: justify;
-
-    &:last-of-type {
-      border-top: 1px solid #815611;
-      position: relative;
-      top: -1px;
-	}
+  /*background-image: url('../images/dirty_old_shirt.png');*/
+  margin: 0;
+  border-top: 0;
+  font-size: inherit;
+  text-align: justify;
+}
+/* line 216, ../sass/extras.scss */
+.accordion dd:last-of-type {
+  border-top: 1px solid #815611;
+  position: relative;
+  top: -1px;
 }
 
-.accordion dd p{
-	margin: 0;
-	padding: 0;
-	width: 100%;
+/* line 223, ../sass/extras.scss */
+.accordion dd p {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
